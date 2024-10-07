@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.vt323-regular {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+	background-image: url("images/bg.png");
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float:left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color:rgba(255,226,233,1.00);
+  border-radius: 20px;
+  border:dotted 2px rgba(248,163,200,1.00)
+}
+
+li a:hover {
+  background-color:rgba(255,250,195,1.00);
+}
+
+header > h1 {
+	text-align: center;
+	font-size: 60px;
+	color:rgba(89,66,56,1.00);
+	margin: 0 auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#container{
+	width: 400px;
+	margin: 0 auto;
+	background: url("images/tile.gif");
+	border-radius: 20px;
+	border:dotted 3px rgba(248,163,201,1.00)
+}
+
+#box{
+	background-color:rgba(253,249,222,0.75);
+	border-radius: 20px;
+	margin: 10px 10px 10px 10px;
+	padding: 10px;
+	border:dashed 1px rgba(248,163,200,1.00);
+	color:rgba(145,129,108,1.00);
+}
+
+input[type=text] {
+  border: 1px dashed rgba(178,162,142,1.00);
+  border-radius: 10px;
+}
+
+input[type=radio] {
+	cursor: pointer;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+	border: 1px dashed rgba(146,129,109,1.00);
+	border-radius: 10px;
+	color: rgba(146,129,108,1.00);
+	background: rgba(255,255,255,1.00);
+	cursor: pointer;
+	
+}

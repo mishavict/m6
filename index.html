@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>m6</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="container">
+		<ul class="vt323-regular">
+  <li><a href li="https://mishavict.github.io/imed-new/">M2</a></li>
+  <li><a href li="https://mishavict.github.io/m3/">M3</a></li>
+  <li><a href li="https://mishavict.github.io/m4/">M4</a></li>
+  <li><a href li="https://mishavict.github.io/m5/">M5</a></li>
+  <li><a href li="https://mishavict.github.io/m6/">M6</a></li>
+</ul>
+<header><h1 class="vt323-regular">Module 6 Dog Survey :3</h1>
+<img src="images/running.gif" alt="running dogs" class="center">
+</header>
+	
+	<div id="box" class="vt323-regular">
+	
+		<form action="">
+			<label for="havedog">Do you have a dog?</label><br>
+			  <input type="radio" id="Yes" name="havedog" value="Yes">
+  <label for="Yes">Yes</label><br>
+  <input type="radio" id="No" name="havedog" value="No">
+  <label for="No">No</label><br><br>
+			
+			<label for="dognumber">If yes, how many dogs do you have?:</label><br>
+  <input type="text" id="dognumber" name="dognumber"><br><br>
+			
+			<label for="dogname">What is/are your dog(s) name(s)?</label><br>
+  <input type="text" id="dogname" name="dogname"><br><br>
+			
+			<label for="password">What's the password?</label><br>
+		<input type="password" id="password" name="password"><br><br>
+			
+			<input type="submit" value="Submit" class="vt323-regular">
+		</form><br>
+
+		<audio controls>
+  <source src="sounds/bark.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+		
+	</div>
+	
+</div>
+	
+	
+<!--Dog canvas found from https://codepen.io/kristenmay/pen/OXZjvq-->
+
+<canvas id="canvas" height="1000px" width="1000px" border="1px dotted black">display if browser does not support html canvas</canvas>
+<script type="text/javascript" src="canvasjs.js"></script>
+	
+<script>
+	var canvas = document.getElementById("canvas");
+var context = canvas.getContext("2d");
+
+function drawFace(){
+context.beginPath();
+context.arc(200,200,60,0,2*Math.PI);
+context.stroke();
+};
+
+function drawLeftEye(){
+context.beginPath();
+context.arc(172,200,15,0,2*Math.PI);
+context.stroke();
+
+context.beginPath();
+context.arc(172,200,7,0,2*Math.PI);
+context.stroke();
+};
+
+function drawRightEye(){
+context.beginPath();
+context.arc(228,200,15,0,2*Math.PI);
+context.stroke();
+
+context.beginPath();
+context.arc(228,200,7,0,2*Math.PI);
+context.stroke();
+};
+
+function drawLeftEar(){
+context.beginPath();
+context.moveTo(180, 143);  //moves right point(right, down)
+context.bezierCurveTo(150,50,120,80,140,190);
+context.stroke();
+  
+  context.beginPath();
+context.moveTo(168, 150);  //moves right point(right, down)
+context.bezierCurveTo(150,100,140,80,150,166);
+context.stroke();
+};
+
+function drawRightEar(){
+context.beginPath();
+context.moveTo(257, 180);  //moves right point(right, down)
+context.bezierCurveTo(270,50,220,80,210,140);
+context.stroke();
+  
+context.beginPath();
+context.moveTo(245, 160);  //moves right point(right, down)
+context.bezierCurveTo(250,70,240,100,220,143);
+context.stroke();
+};
+
+function drawNose(){
+  context.beginPath();
+  context.arc(200,217,9,0, 2*Math.PI);
+  context.stroke();
+};
+
+function drawMouth(){
+  context.beginPath();
+  context.arc(200,235,19,0, Math.PI);
+  context.lineTo(219, 235);
+  context.stroke();
+   
+ context.beginPath();
+  context.moveTo(215, 247);
+  context.bezierCurveTo(215, 240,180,240, 185, 247); 
+  context.stroke();
+
+};
+
+drawFace();
+drawLeftEye();
+drawRightEye();
+drawLeftEar();
+drawRightEar();
+drawNose();
+drawMouth();
+</script>
+
+</body>
+</html>
