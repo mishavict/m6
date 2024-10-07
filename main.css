@@ -74,6 +74,11 @@ input[type=radio] {
 	cursor: pointer;
 }
 
+input[type=password] {
+	border: 1px dashed rgba(178,162,142,1.00);
+	border-radius: 10px;
+}
+
 input[type=button], input[type=submit], input[type=reset] {
 	border: 1px dashed rgba(146,129,109,1.00);
 	border-radius: 10px;
